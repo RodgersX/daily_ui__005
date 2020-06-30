@@ -84,6 +84,8 @@ export default {
 .card-actions {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  top: 20%;
 }
 
 .card-actions__first {
