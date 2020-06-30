@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="card">
@@ -58,6 +58,9 @@
 
 export default {
   name: 'Home',
+  created() {
+    $('carousel').carousel({ interval: false })
+  }
 }
 </script>
 
